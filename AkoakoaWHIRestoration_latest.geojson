@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "AkoakoaWHIRestoration_20260612",
+"name": "AkoakoaWHIRestoration_20260616",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "Date": "2024", "Location": "Papa", "Activity": "Reef Nurseries", "SpeciesInfo": "1 Species", "Notes": "Pocillopora grandis" }, "geometry": { "type": "Point", "coordinates": [ -155.900083891907002, 19.210424172128899 ] } },
@@ -85,6 +85,7 @@
 { "type": "Feature", "properties": { "Date": "5/19/2026", "Location": "Ooma", "Activity": "Reef Nurseries", "SpeciesInfo": "3 Species", "Notes": "17 Porites lobata, 2 Porites lutea, 2 Porites compressa" }, "geometry": { "type": "Point", "coordinates": [ -156.0492, 19.708233 ] } },
 { "type": "Feature", "properties": { "Date": "6/2/2026", "Location": "Pauoa", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "41 Porites lobata, 10 Porites compressa" }, "geometry": { "type": "Point", "coordinates": [ -155.863111, 19.952806 ] } },
 { "type": "Feature", "properties": { "Date": "6/9/2026", "Location": "Makaiwa", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "31 Porites lobata; 4 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.870389, 19.947583 ] } },
-{ "type": "Feature", "properties": { "Date": "6/10/2026", "Location": "Ooma", "Activity": "Rescued Corals", "SpeciesInfo": "2 Species", "Notes": "41 Porites lobata, 1 Montipora capitata" }, "geometry": { "type": "Point", "coordinates": [ -156.04938, 19.70795 ] } }
+{ "type": "Feature", "properties": { "Date": "6/10/2026", "Location": "Ooma", "Activity": "Rescued Corals", "SpeciesInfo": "2 Species", "Notes": "41 Porites lobata, 1 Montipora capitata" }, "geometry": { "type": "Point", "coordinates": [ -156.04938, 19.70795 ] } },
+{ "type": "Feature", "properties": { "Date": "6/16/2026", "Location": "Makaiwa", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "16 Porites lobata, 3 Pocillopora meandrina" }, "geometry": { "type": "Point", "coordinates": [ -155.870389, 19.947583 ] } }
 ]
 }
