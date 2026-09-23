@@ -1,6 +1,5 @@
 {
 "type": "FeatureCollection",
-"name": "AkoakoaWHIRestoration_20260130",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "Date": "2024", "Location": "Papa", "Activity": "Reef Nurseries", "SpeciesInfo": "1 Species", "Notes": "Pocillopora grandis" }, "geometry": { "type": "Point", "coordinates": [ -155.900083891907002, 19.210424172128899 ] } },
@@ -72,6 +71,9 @@
 { "type": "Feature", "properties": { "Date": "11/6/2025", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "30 Porites lobata, 2 Porites compressa" }, "geometry": { "type": "Point", "coordinates": [ -155.900971, 19.378791 ] } },
 { "type": "Feature", "properties": { "Date": "11/7/2025", "Location": "Pauoa", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "25 Porites lobata, 2 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.86311, 19.95281 ] } },
 { "type": "Feature", "properties": { "Date": "1/22/2026", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "1 Species", "Notes": "30 Porites lobata, 2 Porites compressa" }, "geometry": { "type": "Point", "coordinates": [ -155.900919, 19.37874 ] } },
-{ "type": "Feature", "properties": { "Date": "1/28/2026", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "27 Porites lobata, 1 Porites compressa" }, "geometry": { "type": "Point", "coordinates": [ -155.9008, 19.37875 ] } }
+{ "type": "Feature", "properties": { "Date": "1/28/2026", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "27 Porites lobata, 1 Porites compressa" }, "geometry": { "type": "Point", "coordinates": [ -155.9008, 19.37875 ] } },
+{ "type": "Feature", "properties": { "Date": "2/6/2026", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "29 Porites lobata, 1 Porites compressa" }, "geometry": { "type": "Point", "coordinates": [ -155.9008, 19.37875 ] } },
+{ "type": "Feature", "properties": { "Date": "2/17/2026", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "1 Species", "Notes": "27 Porites lobata" }, "geometry": { "type": "Point", "coordinates": [ -155.9008, 19.37875 ] } },
+{ "type": "Feature", "properties": { "Date": "2/19/2026", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "3 Species", "Notes": "25 Porites lobata, 1 Porites lutea, 3 Porites compressa" }, "geometry": { "type": "Point", "coordinates": [ -155.9009, 19.37876 ] } }
 ]
 }
