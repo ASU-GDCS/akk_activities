@@ -57,6 +57,8 @@
 { "type": "Feature", "properties": { "Date": "8/28/2025", "Location": "Mauna Lani", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "14 Porites lobata, 3 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.870833299999987, 19.9469444 ] } },
 { "type": "Feature", "properties": { "Date": "9/4/2025", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "31 Porites lobata; 5 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.89916075, 19.37918 ] } },
 { "type": "Feature", "properties": { "Date": "9/10/2025", "Location": "Mahukona", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "29 Porites lobata, 3 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.90222, 20.18442 ] } },
-{ "type": "Feature", "properties": { "Date": "9/11/2025", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "19 Porites lobata; 2 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.89916075, 19.37918 ] } }
+{ "type": "Feature", "properties": { "Date": "9/11/2025", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "19 Porites lobata; 2 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.89916075, 19.37918 ] } },
+{ "type": "Feature", "properties": { "Date": "9/16/2025", "Location": "Hookena", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "35 Porites lobata, 2 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.900919, 19.37874 ] } },
+{ "type": "Feature", "properties": { "Date": "9/16/2025", "Location": "Honaunau", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "15 Porites lobata, 4 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.913166666666001, 19.422833333333301 ] } }
 ]
 }
