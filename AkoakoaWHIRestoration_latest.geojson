@@ -34,6 +34,7 @@
 { "type": "Feature", "properties": { "Date": "3/27/2025", "Location": "Hookena", "Activity": "Rescued Corals", "SpeciesInfo": "3 Species", "Notes": "Montipora capitata, Porites lutea, Porites lobata" }, "geometry": { "type": "Point", "coordinates": [ -155.89918, 19.37921 ] } },
 { "type": "Feature", "properties": { "Date": "4/9/2025", "Location": "Honaunau", "Activity": "Rescued Corals", "SpeciesInfo": "1 Species", "Notes": "Pocillopora meandrina" }, "geometry": { "type": "Point", "coordinates": [ -155.9135, 19.422333333333334 ] } },
 { "type": "Feature", "properties": { "Date": "4/9/2025", "Location": "Honaunau", "Activity": "Rescued Corals", "SpeciesInfo": "1 Species", "Notes": "Pocillopora meandrina" }, "geometry": { "type": "Point", "coordinates": [ -155.915833333333325, 19.425333333333334 ] } },
-{ "type": "Feature", "properties": { "Date": "4/9/2025", "Location": "Honaunau", "Activity": "Rescued Corals", "SpeciesInfo": "1 Species", "Notes": "Porites lobata" }, "geometry": { "type": "Point", "coordinates": [ -155.913, 19.424833333333332 ] } }
+{ "type": "Feature", "properties": { "Date": "4/9/2025", "Location": "Honaunau", "Activity": "Rescued Corals", "SpeciesInfo": "1 Species", "Notes": "Porites lobata" }, "geometry": { "type": "Point", "coordinates": [ -155.913, 19.424833333333332 ] } },
+{ "type": "Feature", "properties": { "Date": "5/1/2025", "Location": "Mahukona", "Activity": "Reattached Corals", "SpeciesInfo": "2 Species", "Notes": "1 Pocillopora meandrina, 29 Porites lobata" }, "geometry": { "type": "Point", "coordinates": [ -155.901916666666665, 20.184233333333299 ] } }
 ]
 }
