@@ -1,0 +1,113 @@
+version: 2.1
+
+# One config file drives everything; the `run` pipeline parameter picks what runs.
+#
+#   checks   default, every push/PR        scripts compile + published GeoJSON reads (no secrets)
+#   update   manual: Trigger Pipeline      download spreadsheet -> preview map -> APPROVAL
+#            with run = update             -> commit AkoakoaWHIRestoration_latest.geojson to main
+#
+# Project settings it needs (see README): the DROPBOX_XLSX_URL environment variable, and
+# the repo's write deploy key under SSH Keys.
+
+parameters:
+  run:
+    type: enum
+    enum: [checks, update]
+    default: checks
+
+executors:
+  python:
+    docker:
+      - image: cimg/python:3.12
+    resource_class: small
+    environment:
+      UV_VERSION: "0.12.19"
+      UV_PYTHON_DOWNLOADS: never   # use the image's Python 3.12
+      UV_NO_PROGRESS: "1"
+      TZ: America/Los_Angeles      # the date in the file names and the commit message
+
+commands:
+  setup-env:
+    description: Install uv and the locked project environment
+    steps:
+      - restore_cache:
+          keys:
+            - uv-v1-{{ arch }}-{{ checksum "uv.lock" }}
+      - run:
+          name: Install uv + dependencies
+          command: |
+            curl -LsSf "https://astral.sh/uv/${UV_VERSION}/install.sh" | sh
+            echo 'export PATH="${HOME}/.local/bin:${PATH}"' >> "${BASH_ENV}"
+            export PATH="${HOME}/.local/bin:${PATH}"
+            uv sync --frozen
+      - save_cache:
+          key: uv-v1-{{ arch }}-{{ checksum "uv.lock" }}
+          paths:
+            - ~/.cache/uv
+
+jobs:
+  checks:
+    executor: python
+    steps:
+      - checkout
+      - setup-env
+      - run:
+          name: Scripts compile and the published GeoJSON reads
+          command: |
+            for f in make_current_geojson.sh ci/push_geojson.sh; do bash -n "$f"; done
+            uv run python -m py_compile download_latest_xlsx.py updated_json_from_xlsx.py preview_changes.py
+            uv run python -c 'import geopandas; print(len(geopandas.read_file("AkoakoaWHIRestoration_latest.geojson")), "points in the published GeoJSON")'
+
+  prepare-update:
+    executor: python
+    steps:
+      - checkout
+      - setup-env
+      - run:
+          name: Download the spreadsheet and build the new GeoJSON
+          command: uv run bash make_current_geojson.sh
+      - run:
+          name: Review summary (also in the Artifacts tab, as review/map.html)
+          command: |
+            mkdir -p build/review
+            git show HEAD:AkoakoaWHIRestoration_latest.geojson > build/published.geojson
+            cp AkoakoaWHIRestoration_latest.geojson build/
+            uv run python preview_changes.py build/published.geojson \
+              build/AkoakoaWHIRestoration_latest.geojson build/review/map.html
+      - store_artifacts:
+          path: build/review
+          destination: review
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build/AkoakoaWHIRestoration_latest.geojson
+
+  publish-update:
+    executor: python
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      # Installs the repo's write deploy key (Project Settings > SSH Keys)
+      - add_ssh_keys
+      - run:
+          name: Commit the reviewed GeoJSON to main
+          command: ci/push_geojson.sh
+
+workflows:
+  checks:
+    when:
+      equal: [checks, << pipeline.parameters.run >>]
+    jobs:
+      - checks
+
+  update:
+    when:
+      equal: [update, << pipeline.parameters.run >>]
+    jobs:
+      - prepare-update
+      - hold-for-review:
+          type: approval
+          requires: [prepare-update]
+      - publish-update:
+          requires: [hold-for-review]

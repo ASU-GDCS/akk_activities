@@ -3,7 +3,7 @@ echo python download_latest_xlsx.py
 if ! newxlsx=$(python download_latest_xlsx.py); then
   exit 1
 fi
-echo XLS: ${newxls}
+echo XLS: ${newxlsx}
 
 echo python updated_json_from_xlsx.py "$newxlsx"
 if ! newjson=$(python updated_json_from_xlsx.py "$newxlsx"); then
