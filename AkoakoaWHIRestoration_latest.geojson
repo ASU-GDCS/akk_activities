@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "AkoakoaWHIRestoration_20260928",
+"name": "AkoakoaWHIRestoration_20261009",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "Date": "2024", "Location": "Papa", "Activity": "Reef Nurseries", "SpeciesInfo": "1 Species", "Notes": "Pocillopora grandis" }, "geometry": { "type": "Point", "coordinates": [ -155.900083891907002, 19.210424172128899 ] } },
@@ -98,6 +98,11 @@
 { "type": "Feature", "properties": { "Date": "9/3/2026", "Location": "Ooma", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "40 Porites lobata, 1 Montipora capitata" }, "geometry": { "type": "Point", "coordinates": [ -156.050167, 19.703617 ] } },
 { "type": "Feature", "properties": { "Date": "9/3/2026", "Location": "Ooma", "Activity": "Reef Nurseries", "SpeciesInfo": "1 Species", "Notes": "32 Porites lobata" }, "geometry": { "type": "Point", "coordinates": [ -156.0492, 19.708233 ] } },
 { "type": "Feature", "properties": { "Date": "9/10/2026", "Location": "Kailua", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "19 Porites lobata, 3 Porites lutea " }, "geometry": { "type": "Point", "coordinates": [ -155.99297, 19.63045 ] } },
-{ "type": "Feature", "properties": { "Date": "9/23/2026", "Location": "Pauoa", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "34 Porites lobata, 1 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.863111, 19.952806 ] } }
+{ "type": "Feature", "properties": { "Date": "9/23/2026", "Location": "Pauoa", "Activity": "Reef Nurseries", "SpeciesInfo": "2 Species", "Notes": "34 Porites lobata, 1 Porites lutea" }, "geometry": { "type": "Point", "coordinates": [ -155.863111, 19.952806 ] } },
+{ "type": "Feature", "properties": { "Date": "9/16/2026", "Location": "Honaunau", "Activity": "Rescued Corals", "SpeciesInfo": "1 Species", "Notes": "Post storm reattachment after hurricanes Lala and Lowell - 22 Porites lobata" }, "geometry": { "type": "Point", "coordinates": [ -155.913025, 19.424919 ] } },
+{ "type": "Feature", "properties": { "Date": "9/17/2026", "Location": "Honaunau", "Activity": "Rescued Corals", "SpeciesInfo": "1 Species", "Notes": "Post storm reattachment after hurricanes Lala and Lowell - 31 Porites lobata" }, "geometry": { "type": "Point", "coordinates": [ -155.913025, 19.424919 ] } },
+{ "type": "Feature", "properties": { "Date": "9/29/2026", "Location": "Honaunau", "Activity": "Rescued Corals", "SpeciesInfo": "1 Species", "Notes": "Post storm reattachment after hurricanes Lala and Lowell - 30 Porites lobata" }, "geometry": { "type": "Point", "coordinates": [ -155.911931, 19.424292 ] } },
+{ "type": "Feature", "properties": { "Date": "9/30/2026", "Location": "Honaunau", "Activity": "Rescued Corals", "SpeciesInfo": "1 Species", "Notes": "Post storm reattachment after hurricanes Lala and Lowell - 45 Porites lobata" }, "geometry": { "type": "Point", "coordinates": [ -155.911931, 19.424292 ] } },
+{ "type": "Feature", "properties": { "Date": "10/2/2026", "Location": "Honaunau", "Activity": "Rescued Corals", "SpeciesInfo": "3 Species", "Notes": "Post storm reattachment after hurricanes Lala and Lowell - 67 Porites lobata, 5 Porites lutea, 1 Pocillopora meandrina" }, "geometry": { "type": "Point", "coordinates": [ -155.9138958, 19.4222778 ] } }
 ]
 }
